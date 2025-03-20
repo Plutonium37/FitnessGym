@@ -1,0 +1,11 @@
+.abs{
+    width: 100vw;
+    height: 100vh;
+    color: rgb(178, 44, 44);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.hh{
+    height: 60vh;
+}

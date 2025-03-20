@@ -1,0 +1,15 @@
+.im1{
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+    top: 5%;
+    left: 25%;
+}
+.im{
+    width: 50vw;
+    height: 54vh;
+    padding-top: 5%;
+}
+.bbg{
+    background-color: rgb(33, 33, 33);
+}

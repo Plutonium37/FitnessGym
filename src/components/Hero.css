@@ -1,0 +1,26 @@
+.bggg{
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    left: 0;
+    top: 10%;
+    background-image: url(../assets/Hero1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: azure;
+}
+.bb{
+    position: relative;
+    right: 28%;
+    bottom: 8%;
+}
+.bbb{
+    position: relative;
+    top: 20%;
+    left: -15%;
+}
+.aa{
+    width: 12em;
+    background-color: rgb(236, 190, 41);
+    color: rgb(30, 30, 30);
+}

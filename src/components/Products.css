@@ -1,0 +1,19 @@
+.pro{
+    width: 100vw;
+    height: 85vh;
+    background-color: bisque;
+    position: absolute;
+    top: 160%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+}
+.ca{
+    width: 18rem;
+    height: 95%;
+    background-color: rgb(255, 252, 252);
+}
+.mi{
+    width: 14rem;
+    height: 90%;
+}
