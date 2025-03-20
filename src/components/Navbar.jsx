@@ -15,7 +15,7 @@ const ResponsiveNavbar = () => {
                             <Nav.Link className='btn btn-outline-warning' as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link className='btn btn-outline-warning' as={Link} to="/about">About</Nav.Link>
                             <Nav.Link className='btn btn-outline-warning' as={Link} to="/services">Services</Nav.Link>
-                            <Nav.Link className='btn btn-outline-warning' as={Link} to="/crud">SignIn</Nav.Link>
+                            <Nav.Link className='btn btn-outline-warning' as={Link} to="/login">SignIn</Nav.Link>
                         </div>
                         <div className="d-flex d-md-none">
                             <NavDropdown title="Menu" id="basic-nav-dropdown">

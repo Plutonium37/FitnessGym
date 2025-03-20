@@ -7,7 +7,6 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Services from './pages/Services.jsx'
 import Foorm from './pages/SignIn.jsx'
-import Crud from './pages/crud.jsx'
 
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
           <Route path='about' element={<About></About>}></Route>
           <Route path='services' element={<Services></Services>}></Route>
           <Route path='login' element={<Foorm></Foorm>}></Route>
-          <Route path='crud' element={<Crud></Crud>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
