@@ -4,15 +4,23 @@ import './login.css'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { db } from '../firebaseconfig.jsx'
 import { setDoc, doc } from 'firebase/firestore'
+import { useNavigate } from 'react-router-dom';
 
 const Foorm = () => {
   const [password, setPassword] = useState("")
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+
+  const navigate = useNavigate();
+
+  const handleLoginRedirect = () => {
+    navigate('/dashboard');
+  };
+
   const handleSignUp = async (e) => {
     e.preventDefault();
     const auth = getAuth();
-  
+
     // Check if the user has filled out all fields
     if (!name) {
       alert("Please enter your name.");
@@ -28,10 +36,10 @@ const Foorm = () => {
       try {
         console.log("Creating user with email:", email);
         console.log("User name:", name);
-  
+
         // Create user with email and password
         await createUserWithEmailAndPassword(auth, email, password);
-        
+
         // set user data in Firestore
         const user = auth.currentUser;
         if (user) {
@@ -40,10 +48,12 @@ const Foorm = () => {
             name: name,
           });
         }
-  
+
         // Redirect to dashboard page
-        setTimeout(function() {window.location.href = "/dashboard"},1000)
-  
+        // window.location.href = 'https://delightful-sable-95baec.netlify.app/home';
+        handleLoginRedirect()
+
+
       } catch (e) {
         // Handle errors (e.g., email already in use, weak password, etc.)
         console.error(e.message);
