@@ -41,8 +41,8 @@ const Foorm = () => {
           });
         }
   
-        // Redirect to home page
-        window.location.href="/home"; 
+        // Redirect to dashboard page
+        setTimeout(function() {window.location.href = "/dashboard"},1000)
   
       } catch (e) {
         // Handle errors (e.g., email already in use, weak password, etc.)
@@ -57,7 +57,7 @@ const Foorm = () => {
       <Form className='d-flex flex-column align-items-center pt-5' onSubmit={handleSignUp}>
         <Form.Group className="mb-3 w-75">
           <Form.Label className='d-flex justify-content-center text-lg'>
-            <h2>LogIn</h2>
+            <h2>SignUp</h2>
           </Form.Label>
         </Form.Group>
         <Form.Group className="mb-3 w-75" >
